@@ -41,5 +41,11 @@ jobs:
           distribution: goreleaser
           version: latest
           args: release --clean
+      -
+        name: Upload assets
+        uses: actions/upload-artifact@v3
+        with:
+          name: test
+          path: dist/*
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
