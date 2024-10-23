@@ -298,4 +298,4 @@ upx:
     lzma: true
 
     # Whether to try all methods and filters (slow).
-    brute: false
+    brute: true
