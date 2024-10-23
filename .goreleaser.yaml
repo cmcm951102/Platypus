@@ -297,5 +297,11 @@ upx:
     # Whether to try LZMA (slower).
     lzma: true
 
+    # Filter by GOOS.
+    goos: [linux, darwin, windows]
+
+    # Filter by GOARCH.
+    goarch: [arm, arm64, amd64, "386"]
+
     # Whether to try all methods and filters (slow).
-    brute: true
+    brute: false
